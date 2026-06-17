@@ -1,0 +1,58 @@
+# ─────────────────────────────────────────────────────────────
+# .gitignore — Prevent sensitive files from reaching GitHub
+# ─────────────────────────────────────────────────────────────
+
+# ── Virtual environment ──────────────────────────────────────
+venv/
+.venv/
+env/
+.env
+
+# ── Python cache ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+dist/
+build/
+
+# ── Data — NEVER commit raw data or model weights ────────────
+data/raw/
+data/processed/
+models/*.pkl
+models/*.joblib
+models/*.h5
+*.csv
+*.parquet
+*.sqlite
+*.db
+
+# ── Secrets & credentials ────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+*.crt
+secrets.toml
+.streamlit/secrets.toml
+
+# ── IDE & OS ─────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ──────────────────────────────────────────────────
+notebooks/.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ── Logs & temp ──────────────────────────────────────────────
+*.log
+logs/
+tmp/
+temp/
