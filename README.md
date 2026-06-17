@@ -1,30 +1,30 @@
-# 🌾 Crop Yield Predictor & Interpreter
+# Crop Yield Predictor and Interpreter
 
-A production-ready, security-hardened Machine Learning web application that predicts crop yields and provides explainable AI (XAI) insights using SHAP, integrated with real-time NASA POWER meteorological data.
+A machine learning web application that predicts crop yields and provides explainable AI insights using SHAP, integrated with real-time NASA POWER meteorological data.
 
-🔗 **Live Code Repository**: [GitHub](https://github.com/huzaib123/Crop-Yield-Predictor-)
-
----
-
-## 🚀 Key Highlights
-
-*   **Explainable AI (XAI)**: Implements SHAP (SHapley Additive exPlanations) to decompose model predictions and visualize feature impact (positive/negative drivers) in real time.
-*   **Production-Grade Security**: Features an application-level firewall (`security.py`) providing session-based rate-limiting, strict regex input validation, path-traversal prevention, and error-scrubbing to prevent source code leaks.
-*   **NASA Meteorological Integration**: Directly pulls historical and daily climate observations (temperature, precipitation, solar radiation) for precise coordinates via the NASA POWER API.
-*   **Clean Architecture**: Segregated into modular training pipelines (`src/`), a secure presentation layer (`app/`), and serialized inference objects (`models/`).
+Live Repository: https://github.com/huzaib123/Crop-Yield-Predictor-
 
 ---
 
-## 🛠️ Architecture & Tech Stack
+## Key Features
 
-*   **Frontend**: Streamlit, Custom Vanilla CSS (Premium Glassmorphism & Micro-animations)
-*   **Machine Learning**: Scikit-Learn, Joblib, SHAP (Interpretability)
-*   **Data & APIs**: Pandas, NumPy, OkHttp/Requests, NASA POWER API
-*   **Security**: Regular Expression Sanitization, Session-State Rate Limiting
+*   **Explainable AI**: Implements SHAP (SHapley Additive exPlanations) to decompose model predictions and visualize feature impact (both positive and negative drivers) in real time.
+*   **Application Security**: Features a custom security layer providing session-based rate-limiting, input sanitization, path-traversal prevention, and error-scrubbing.
+*   **Meteorological Integration**: Automatically queries historical and daily climate observations (temperature, precipitation, solar radiation) for specific coordinates via the NASA POWER API.
+*   **Clean Architecture**: Structured with a clear separation between the modular training pipelines, presentation layer, and serialized inference objects.
 
 ---
 
-## 📦 Directory Structure
+## Tech Stack
+
+*   **Frontend**: Streamlit with custom CSS layout and responsive design.
+*   **Machine Learning**: Scikit-Learn, Joblib, and SHAP for model interpretability.
+*   **Data & APIs**: Pandas, NumPy, and Requests to query the NASA POWER API.
+*   **Security**: Regular expression sanitization and session-state rate limiting.
+
+---
+
+## Directory Structure
 
 ```text
 ├── app/
@@ -41,7 +41,7 @@ A production-ready, security-hardened Machine Learning web application that pred
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 1. **Clone the repository**:
    ```bash
